@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Interest</title>
+
+<style>
+body { margin: 0; font-family: Arial; background-color: #4c6373; }
+.topnav { overflow: hidden; background-color: #80aee0; padding-left: 160px; }
+.topnav a { float: left; display: block; color: #ffffff; text-align: center; padding: 14px 26px; text-decoration: none; font-size: 15px; font-weight: bold; }
+.topnav a:hover { background-color: #4473a5; }
+.sidebar { height: 100%; width: 160px; position: fixed; top: 0; left: 0; background-color: #c7d6e7; padding-top: 20px; }
+.sidebar a { display: block; padding: 10px 20px; color: black; font-weight: bold; text-decoration: none; }
+.sidebar a:hover { background-color: #9eb6d1; }
+.content { margin-left: 160px; padding: 20px; color: white; }
+footer { text-align: center; padding: 10px; font-size: 12px; color: white; }
+
+/* New flex layout for Interest section */
+.interest-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.interest-text {
+    flex: 1 1 300px; /* Text takes at least 300px */
+}
+.interest-media {
+    flex: 1 1 300px; /* Media takes at least 300px */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.interest-media img, .interest-media video {
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="sidebar">
+    <a href="index.html">Home</a>
+    <a href="biodata.html">Biodata</a>
+    <a href="interest.html">Interest</a>
+    <a href="family.html">Family</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="education.html">Education</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+<div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="biodata.html">Biodata</a>
+    <a href="interest.html">Interest</a>
+    <a href="family.html">Family</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="education.html">Education</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+<div class="content">
+    <h1>Interest</h1>
+
+    <div class="interest-container">
+        <div class="interest-text">
+            <h2>Hobbies / Interests</h2>
+            <ul>
+                <li>Playing tug of war and badminton</li>
+                <li>Reading novels and comics</li>
+                <li>Coding and building web applications</li>
+                <li>Cooking my favourite western cuisine</li>
+                <li>Listening to music</li>
+                <li>Playing online games</li>
+                <li>Traveling and exploring new places</li>
+            </ul>
+        </div>
+
+        <div class="interest-media">
+            <!-- Photo slot -->
+            <img src="tugofwar.jpeg" alt="My Photo">
+
+            <!-- Video slot -->
+            <video controls>
+                <source src="games.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</div>
+
+<footer>
+    © 2025 Ariff. Best viewed on Chrome. Last updated: November 2025.
+</footer>
+
+</body>
+</html>
