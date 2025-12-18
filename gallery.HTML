@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gallery</title>
+
+<style>
+body { 
+ margin: 0;
+    font-family: Arial;
+
+    background-image: url("background.jpg"); 
+    background-size: cover;                  
+    background-position: center;            
+    background-repeat: no-repeat;             
+    background-attachment: fixed; 
+ }
+
+.topnav { 
+	overflow: hidden; 
+	background-color: #80aee0; 
+	padding-left: 160px; 
+}
+
+.topnav a { 
+	float: left;
+	 display: block; color: #ffffff; 
+	text-align: center; padding: 14px 26px; 
+	text-decoration: none; font-size: 15px;
+	 font-weight: bold;
+ }
+
+.topnav a:hover { background-color: #4473a5; }
+
+.sidebar { 
+	height: 100%; 
+	width: 160px; 
+	position: fixed; 
+	top: 0; left: 0;
+	 background-color: #c7d6e7;
+	 padding-top: 20px; }
+
+.sidebar a {
+	 display: block;
+	 padding: 10px 20px; 
+	 color: black; 
+	font-weight: bold;
+	 text-decoration: none;
+ }
+
+.sidebar a:hover { background-color: #9eb6d1; }
+
+.content { margin-left: 160px; padding: 20px; color: white; text-align: center; }
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 900px; /* Controls width for clean center */
+    margin: 30px auto; /* Centers the whole grid */
+    gap: 25px;
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid #fff;
+}
+
+/* Title under photo */
+.gallery-title {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    color: white;
+}
+</style>
+
+</head>
+<body>
+
+<div class="sidebar">
+    <a href="index.html">Home</a>
+    <a href="biodata.html">Biodata</a>
+    <a href="interest.html">Interest</a>
+    <a href="family.html">Family</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="education.html">Education</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+<div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="biodata.html">Biodata</a>
+    <a href="interest.html">Interest</a>
+    <a href="family.html">Family</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="education.html">Education</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+<div class="content">
+    <h1>Gallery</h1>
+    <p>This is my mini gallery of picture that i captured, edited, created by me .</p>
+
+    <div class="gallery-container">
+
+        <div class="gallery-item">
+            <img src="gallery1.jpeg" alt="Photo 1">
+            <div class="gallery-title">Gua Kelam Forest</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="gallery2.jpeg" alt="Photo 2">
+            <div class="gallery-title">Sunset view in pantai Chenang, Langkawi, Kedah</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="gallery3.jpeg" alt="Photo 3">
+            <div class="gallery-title">My favourite game, Wuthering Waves</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="gallery4.jpeg" alt="Photo 4">
+            <div class="gallery-title">Sunset view in Uitm Merbok</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="gallery5.jpeg" alt="Photo 5">
+            <div class="gallery-title">My lovely cat, Comot</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="gallery6.jpeg" alt="Photo 6">
+            <div class="gallery-title">Favourite fruit</div>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    © 2025 Muhammad Ariff Ihsan Bin Rohaya @ Yahaya | 2024936577 | KCDIM1444A | All rights reserved
+</footer>
+
+</body>
+</html>
